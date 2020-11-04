@@ -40,7 +40,7 @@ class App(Resource):
 
         today = date.today()
         print("Today's date:", today)
-        app = AppModel(_id, today, 1, False, "", "")
+        app = AppModel(_id, today, 1, "0", "", "")
         try:
             app.save_to_db()
         except Exception as ex:
