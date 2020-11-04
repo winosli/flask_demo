@@ -9,7 +9,7 @@ class AppModel(db.Model):
     _id = db.Column(db.String, primary_key=True)
     date = db.Column(db.String(50))
     downloads = db.Column(db.Integer)
-    too = db.Column(db.Integer)
+    too = db.Column(db.String)
     pa = db.Column(db.String)
     mes = db.Column(db.String)
 
