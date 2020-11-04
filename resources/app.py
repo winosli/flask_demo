@@ -45,7 +45,7 @@ class App(Resource):
             app.save_to_db()
         except Exception as ex:
             print(ex)
-            return {"message": "An error occurred creating the app."}, 500
+            return {"message": "An error occurred creating the app: " + str(ex)}, 500
        # return jsonify({'app': app})
         return app.json(), 201
 
